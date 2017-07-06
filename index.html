@@ -40,6 +40,7 @@ ul.tree-view li ul::before{
 	position:absolute;
 	left:12px;
 	top:6px;
+	z-index:1;
 }
 ul.tree-view li ul::after{
 	content: "";
@@ -68,27 +69,27 @@ ul.tree-view > li:last-child, ul.tree-view ul > li:last-child{
 <body>
 
 <ul class="tree-view">
-	<li>Child 1</li>
-	<li>Child 2
+	<li>Item 1</li>
+	<li>Item 2
     	<ul>
-        	<li>Grandchild 2.1</li>
-            <li>Grandchild 2.2
+        	<li>Subitem 2.1</li>
+            <li>Subitem 2.2
                 <ul>
-                    <li>Grandchild 2.2.1</li>
-                    <li>Grandchild 2.2.2</li>
-                    <li>Grandchild 2.2.3</li>
+                    <li>Subitem 2.2.1</li>
+                    <li>Subitem 2.2.2</li>
+                    <li>Subitem 2.2.3</li>
                 </ul>
             </li>
-        	<li>Grandchild 2.3</li>
+        	<li>Subitem 2.3</li>
         </ul>
     </li>
-	<li>Child 3</li>
-	<li>Child 4</li>
-	<li>Child 5
+	<li>Item 3</li>
+	<li>Item 4</li>
+	<li>Item 5
     	<ul>
-        	<li>Grandchild 5.1</li>
-        	<li>Grandchild 5.2</li>
-        	<li>Grandchild 5.3</li>
+        	<li>Subitem 5.1</li>
+        	<li>Subitem 5.2</li>
+        	<li>Subitem 5.3</li>
         </ul>
     </li>
 </ul>
