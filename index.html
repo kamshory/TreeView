@@ -40,16 +40,17 @@ ul.tree-view li ul::before{
 	position:absolute;
 	left:12px;
 	top:6px;
-	z-index:1;
+	z-index:2;
 }
 ul.tree-view li ul::after{
 	content: "";
 	width: 1px;
-	height: 14px;
+	height: 22px;
 	border-left: 1px dotted #555555;
 	position: absolute;
 	left: 16px;
 	top: 6px;
+	z-index:1;
 }
 ul.tree-view > li:last-child::after, ul.tree-view ul > li:last-child::after{
 	content:"";
@@ -69,10 +70,10 @@ ul.tree-view > li:last-child, ul.tree-view ul > li:last-child{
 <body>
 
 <ul class="tree-view">
-	<li>Item 1</li>
-	<li>Item 2
-    	<ul>
-        	<li>Subitem 2.1</li>
+	<li><a href="#">Item 1</a></li>
+	<li><a href="#">Item 2</a>
+<ul>
+       	<li><a href="#">Subitem 2.1</a></li>
             <li>Subitem 2.2
                 <ul>
                     <li>Subitem 2.2.1</li>
