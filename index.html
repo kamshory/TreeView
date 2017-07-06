@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TreeView</title>
+<style type="text/css">
+ul.tree-view, ul.tree-view ul{
+	background-color:#FFFFFF;
+}
+ul.tree-view ul{
+	margin:0 0 0 -10px;
+	padding:0;
+}
+ul.tree-view li{
+	margin:0;
+	padding:0;
+	background-color:#FFFFFF;
+}
+ul.tree-view > li, ul.tree-view ul > li{
+	position:relative;
+	list-style-type:none;
+	border-left:1px dotted #555555;
+	padding-left:26px;
+}
+ul.tree-view > li::before, ul.tree-view ul > li::before{
+	content:"";
+	width:23px;
+	height:1px;
+	border-top:1px dotted #555555;
+	position:absolute;
+	margin-left:-25px;
+	margin-top:10px;
+}
+
+ul.tree-view li ul::before{
+	content:"";
+	width:7px;
+	height:7px;
+	border:1px solid #555555;
+	position:absolute;
+	left:12px;
+	top:6px;
+}
+ul.tree-view li ul::after{
+	content: "";
+	width: 1px;
+	height: 14px;
+	border-left: 1px dotted #555555;
+	position: absolute;
+	left: 16px;
+	top: 6px;
+}
+ul.tree-view > li:last-child::after, ul.tree-view ul > li:last-child::after{
+	content:"";
+	height:10px;
+	width:1px;
+	border-left: 1px dotted #555555;
+	position:absolute;
+	left: 0px;
+	top: 0px;
+}
+ul.tree-view > li:last-child, ul.tree-view ul > li:last-child{
+	border-left:none;
+}
+</style>
+</head>
+
+<body>
+
+<ul class="tree-view">
+	<li>Child 1</li>
+	<li>Child 2
+    	<ul>
+        	<li>Grandchild 2.1</li>
+            <li>Grandchild 2.2
+                <ul>
+                    <li>Grandchild 2.2.1</li>
+                    <li>Grandchild 2.2.2</li>
+                    <li>Grandchild 2.2.3</li>
+                </ul>
+            </li>
+        	<li>Grandchild 2.3</li>
+        </ul>
+    </li>
+	<li>Child 3</li>
+	<li>Child 4</li>
+	<li>Child 5
+    	<ul>
+        	<li>Grandchild 5.1</li>
+        	<li>Grandchild 5.2</li>
+        	<li>Grandchild 5.3</li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>
